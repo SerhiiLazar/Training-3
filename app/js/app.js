@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+/* document.addEventListener("DOMContentLoaded", function () {
 
     MicroModal.init({
         onShow: modal => {
@@ -21,16 +21,16 @@ document.addEventListener("DOMContentLoaded", function () {
         awaitOpenAnimation: false, // [8]
         awaitCloseAnimation: false, // [9]
         debugMode: true // [10]
-    });
+    }); 
 
-});
+});*/
 
-
+/* 
 $(function () {
 
     /**Burger*/
 
-    var btnBurger = $('.burger-mobile');
+   /*  var btnBurger = $('.burger-mobile');
 
     btnBurger.on('click', function () {
         if (!$(this).hasClass('active-mobile-btn')) {
@@ -40,21 +40,21 @@ $(function () {
             $(this).removeClass('active-mobile-btn');
             $('body').removeClass('active-menu');
         }
-    });
+    }); */
 
-    $('.overlay-menu').on('click', function () {
+   /*  $('.overlay-menu').on('click', function () {
         $('body').removeClass('active-menu');
         $('.burger-mobile').removeClass('active-mobile-btn');
     })
-
+ */
 
     /**Mask*/
-    $('input[type="tel"]').inputmask({"mask": "+38(999) 999-99-99", clearMaskOnLostFocus: false});
+   /*  $('input[type="tel"]').inputmask({"mask": "+38(999) 999-99-99", clearMaskOnLostFocus: false});
 
-
+ */
     /** Anchor*/
 
-    $("body").on("click", "a[href*='#']", function (event) {
+    /* $("body").on("click", "a[href*='#']", function (event) {
         event.preventDefault();
 
         if ($('body').hasClass('active-menu')) {
@@ -75,10 +75,10 @@ $(function () {
         $('body,html').animate({
             scrollTop: top
         }, 800);
-    });
+    }); */
 
     /** Adaptive */
-    var window_width = window.innerWidth || document.documentElement.clientWidth,
+   /*  var window_width = window.innerWidth || document.documentElement.clientWidth,
         lgMax = 1199,
         lgMin = 992,
         mdMax = 991,
@@ -96,26 +96,26 @@ $(function () {
         headerLang = $('.header-language'),
         headerMenu = $('#nav-header'),
         headerPhone = $('.header-phones'),
-        siteSearch = $('#header-search-form');
+        siteSearch = $('#header-search-form'); */
 
 
-    function desctopMenu() {
+   /*  function desctopMenu() {
         $('#header-checkout-sidebar').before(authButton);
         $('#page-header .left-header').append(headerLang);
         $('#page-header .left-header').after(headerMenu);
         headerMenu.after(headerPhone);
         pageAside.prepend(siteSearch);
     }
-
-    function mobileMenu() {
+/*  */
+   /*  function mobileMenu() {
         pageAside.append(authButton);
         pageAside.append(headerLang);
         pageAside.append(headerMenu);
         pageAside.append(headerPhone);
         $('#page-header').append(siteSearch);
-    }
+    } */ 
 
-    function changeMenu() {
+  /*   function changeMenu() {
         if (window_width <= lgMax && !$('body').hasClass('mobile-ui')) {
             $('body').addClass('mobile-ui');
             $('body').removeClass('desktop-ui');
@@ -130,4 +130,4 @@ $(function () {
     }
 
     changeMenu();
-});
+}); */

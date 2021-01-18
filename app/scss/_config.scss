@@ -13,12 +13,9 @@ $gutter: $grid-gutter-width;
 
 @import "node_modules/bootstrap/scss/bootstrap-reboot.scss"; // Bootstrap Reboot collection
 
-
 // FONTS LOAD SECTION
 
-
 // @include font("Roboto", normal, 400, "../fonts/roboto-regular-webfont.woff2");
-
 
 // GENERAL DOCUMENT STYLES
 
@@ -68,7 +65,6 @@ strong {
   font-weight: bold;
 }
 
-
 body {
   font-family: $font;
   font-size: $fontsize;
@@ -78,21 +74,28 @@ body {
   overflow-x: hidden;
   color: $textcolor;
 }
-
+.wrapper {
+  background-image: url("../images/dest/background.png");
+  display: flex;
+  justify-content: center;
+}
 .container {
-  @include container;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 840px;
+  padding: 0;
+  margin: 0 15px auto;
+  width: 100%;
 }
 
-
-
-
-body.active-menu {
+/* body.active-menu {
   overflow: hidden;
   .overlay-menu {
     right: 0;
   }
-}
-.overlay-menu {
+} */
+/* .overlay-menu {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -103,30 +106,30 @@ body.active-menu {
   transition: all 0.3s;
 }
 
-$btn-burger-color:#000000;
-$height-burger-line:4px;
-$width-burger-line:40px;
-$height-burger-btn:24px;
-$indent-burger-line:-10px;
-$radius-burger-line:4px;
+$btn-burger-color: #000000;
+$height-burger-line: 4px;
+$width-burger-line: 40px;
+$height-burger-btn: 24px;
+$indent-burger-line: -10px;
+$radius-burger-line: 4px;
 
 .burger-mobile {
   display: flex;
   align-items: center;
   justify-content: center;
-  .burger-mobile-box{
+  .burger-mobile-box {
     cursor: pointer;
     position: relative;
     display: inline-block;
     width: $width-burger-line;
     height: $height-burger-btn;
   }
-  .burger-mobile-line{
+  .burger-mobile-line {
     position: absolute;
     width: $width-burger-line;
     height: $height-burger-line;
     transition-timing-function: ease;
-    transition-duration: .15s;
+    transition-duration: 0.15s;
     transition-property: transform;
     border-radius: $radius-burger-line;
     background-color: $btn-burger-color;
@@ -134,28 +137,28 @@ $radius-burger-line:4px;
     top: 50%;
     display: block;
     margin-top: -2px;
-    &:before{
+    &:before {
       display: block;
-      content: '';
+      content: "";
       top: $indent-burger-line;
       position: absolute;
       width: $width-burger-line;
       height: $height-burger-line;
       transition-timing-function: ease;
-      transition-duration: .15s;
+      transition-duration: 0.15s;
       transition-property: transform;
       border-radius: $radius-burger-line;
       background-color: $btn-burger-color;
     }
-    &:after{
+    &:after {
       display: block;
-      content: '';
+      content: "";
       bottom: $indent-burger-line;
       position: absolute;
       width: $width-burger-line;
       height: $height-burger-line;
       transition-timing-function: ease;
-      transition-duration: .15s;
+      transition-duration: 0.15s;
       transition-property: transform;
       border-radius: $radius-burger-line;
       background-color: $btn-burger-color;
@@ -165,18 +168,20 @@ $radius-burger-line:4px;
 
 .active-mobile-btn {
   .burger-mobile-line {
-    transition-delay: .12s;
-    transition-timing-function: cubic-bezier(.215,.61,.355,1);
+    transition-delay: 0.12s;
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
     transform: rotate(45deg);
-    &:after{
+    &:after {
       bottom: 0;
-      transition: bottom 75ms ease,transform 75ms cubic-bezier(.215,.61,.355,1) .12s;
+      transition: bottom 75ms ease,
+        transform 75ms cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
       transform: rotate(-90deg);
     }
-    &:before{
+    &:before {
       top: 0;
-      transition: top 75ms ease,opacity 75ms ease .12s;
+      transition: top 75ms ease, opacity 75ms ease 0.12s;
       opacity: 0;
     }
   }
 }
+ */
