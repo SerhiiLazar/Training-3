@@ -1,0 +1,34 @@
+.header__inform {
+  display: flex;
+  margin-bottom: 50px;
+  .servic {
+    &__title {
+      font-size: 36px;
+      font-weight: bold;
+      color: $white;
+      text-transform: uppercase;
+    }
+    &__text {
+      font-size: 16px;
+      color: $white;
+      border-left: 1px solid $grey;
+      padding-left: 20px;
+      margin-bottom: 40px;
+    }
+    &__btn {
+      a {
+        color: $white;
+        align-items: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+  }
+  .servic-img {
+    margin: 50px 20px 2px;
+    img {
+    }
+  }
+}

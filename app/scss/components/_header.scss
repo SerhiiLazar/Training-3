@@ -2,12 +2,23 @@
   &__input {
     display: flex;
     justify-content: flex-end;
-    border: 2px solid $grey;
-    margin-left: 500px;
 
+    margin-left: 530px;
+    /* margin: 24px 0 21px; */
+    width: 311px;
+    font-size: 12px;
+    height: 49px;
     .input-tel {
-      /*  opacity: 0;
-      color: $white; */
+      width: 224px;
+      text-align: center;
+      font-size: 21px;
+      font-weight: bold;
+      border: 2px solid $grey;
+      height: 47px;
+      background-color: inherit;
+
+      /* opacity: 0;
+      color: $white */
     }
     .input-btn {
       background-color: $grey;
@@ -68,6 +79,7 @@
     }
   }
   .logo {
+    display: block;
     z-index: 111;
     margin-left: 50px;
     width: 174px;
