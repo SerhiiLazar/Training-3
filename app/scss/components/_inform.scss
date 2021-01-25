@@ -1,21 +1,36 @@
 .header__inform {
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: -100px;
   .servic {
     &__title {
       font-size: 36px;
       font-weight: bold;
+      line-height: initial;
       color: $white;
       text-transform: uppercase;
     }
     &__text {
+      position: relative;
       font-size: 16px;
       color: $white;
       border-left: 1px solid $grey;
       padding-left: 20px;
+      margin: 0 72px 0 0;
+      text-align: justify;
       margin-bottom: 40px;
+      &::after {
+        content: "";
+        background-color: #5849ae;
+        height: 784px;
+        position: absolute;
+        top: -396px;
+        z-index: 1;
+        left: 819px;
+        width: 5px;
+      }
     }
     &__btn {
+      position: relative;
       a {
         color: $white;
         align-items: center;
@@ -24,11 +39,59 @@
         font-size: 20px;
         font-weight: bold;
       }
+      &::after {
+        content: "";
+        background-color: #b58f65;
+        opacity: 0.9;
+        width: 1995px;
+        position: absolute;
+        top: 131px;
+        z-index: 1;
+        left: -234px;
+        height: 24px;
+      }
+      &::before {
+        content: "";
+        background-color: #b58f65;
+        opacity: 0.9;
+        width: 1995px;
+        position: absolute;
+        top: 117px;
+        z-index: -1;
+        left: -234px;
+        height: 37px;
+      }
     }
   }
   .servic-img {
-    margin: 50px 20px 2px;
-    img {
+    z-index: -1;
+    margin: 139px -1px 45px;
+    margin-left: -44px;
+    position: relative;
+    &::after {
+      content: "";
+      background-color: #5849ae;
+      height: 784px;
+      position: absolute;
+      top: -365px;
+      z-index: -1;
+      left: 114px;
+      width: 10px;
     }
+    &::before {
+      content: "";
+      background-color: #c69c6d;
+      height: 784px;
+      position: absolute;
+      top: -365px;
+      z-index: 2;
+      left: 254px;
+      width: 5px;
+    }
+  }
+
+  img {
+    position: relative;
+    height: 507px;
   }
 }

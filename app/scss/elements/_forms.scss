@@ -21,24 +21,23 @@ $global-main-color: #2b343c;
     border: none;
   }
 
-
   input:checked {
     .checkmark,
     & ~ .checkmark {
       &:after {
-        transform: translate(-50%,-50%) scale(1);
+        transform: translate(-50%, -50%) scale(1);
       }
     }
   }
 
   .checkmark {
     &:before,
-    &:after{
-      content: '';
+    &:after {
+      content: "";
       position: absolute;
       top: 50%;
       left: 15px;
-      transform: translate(-50%,-50%);
+      transform: translate(-50%, -50%);
       border: 1px solid #51656c;
       border-radius: 50%;
       transition: 0.2s ease-in;
@@ -53,12 +52,7 @@ $global-main-color: #2b343c;
       width: 8px;
       height: 8px;
       background-color: #7f3e9a;
-      transform: translate(-50%,-50%) scale(0);
+      transform: translate(-50%, -50%) scale(0);
     }
-
-
   }
-
-
-
 }

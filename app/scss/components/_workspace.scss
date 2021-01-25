@@ -1,0 +1,49 @@
+.workspace {
+  margin-top: -150px;
+  margin-bottom: 50px;
+  background-image: url("../images/dest/fon2.png");
+  background-size: cover;
+
+  background-repeat: no-repeat;
+
+  /* background-position: center; */
+  /*  background-size: cover; */
+}
+.workspace-fon {
+  background-image: url("../images/dest/fon_2.png");
+  height: auto;
+  opacity: 0.9;
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  &__title h2 {
+    opacity: 0.5;
+    padding-top: 20px;
+    font-size: 55.9px;
+    line-height: 24px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: $white;
+    margin-bottom: 25px;
+  }
+  &__title h3 {
+    opacity: 0.5;
+    font-size: 25.4px;
+    line-height: 24px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: $white;
+  }
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__accordion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

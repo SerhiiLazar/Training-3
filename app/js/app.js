@@ -48,10 +48,7 @@ $(function () {
     })
  */
 
-    /**Mask*/
-   /*  $('input[type="tel"]').inputmask({"mask": "+38(999) 999-99-99", clearMaskOnLostFocus: false});
-
- */
+ 
     /** Anchor*/
 
     /* $("body").on("click", "a[href*='#']", function (event) {
@@ -131,3 +128,29 @@ $(function () {
 
     changeMenu();
 }); */
+$(function(){
+
+   /**Mask*/
+     $('input[type="tel"]').inputmask({"mask": "+38(999) 999-99-99", clearMaskOnLostFocus: false});
+
+ 
+
+    /**/
+    var accordionBlock = $('.accordion__block');
+
+accordionBlock.each(function (i, el) {
+
+    var accordionTop = $(el).find('.accordion__top');
+
+    accordionTop.on('click', () => {
+        $(el).siblings('.accordion__block').removeClass('open');
+        if (!$(el).hasClass('open')) {
+            $(el).addClass('open');
+        } else {
+            $(el).removeClass('open');
+        }
+
+    })
+})
+
+})
