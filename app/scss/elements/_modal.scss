@@ -13,7 +13,7 @@ html.open-modal {
   right: 0;
   bottom: 0;
   z-index: 200;
-  background: rgba(12, 12, 12, 0.6);
+  background: rgba(87, 59, 188, 1.6);
   /*Размытие фона*/
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
@@ -38,11 +38,10 @@ html.open-modal {
   background-position: center;
   background-size: contain;
 
-
-  &.form-modal{
+  &.form-modal {
     //display: none;
   }
-  &.sucsess{
+  &.sucsess {
     display: none;
     min-height: 308px;
     //display: flex;
@@ -125,11 +124,11 @@ html.open-modal {
   line-height: 1.5;
   color: rgba(0, 0, 0, 0.8);
 
-  &_sucsess{
+  &_sucsess {
     display: flex;
     align-items: center;
     justify-content: center;
-    .sucsess__title{
+    .sucsess__title {
       white-space: pre-line;
       //font-family: $font2;
       font-weight: normal;
@@ -139,7 +138,6 @@ html.open-modal {
       //color: $white;
     }
   }
-
 }
 
 .modal__btn {

@@ -1,4 +1,4 @@
-/* document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
 
     MicroModal.init({
         onShow: modal => {
@@ -23,7 +23,7 @@
         debugMode: true // [10]
     }); 
 
-});*/
+});
 
 /* 
 $(function () {
