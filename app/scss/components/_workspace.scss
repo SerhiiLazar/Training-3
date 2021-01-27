@@ -2,7 +2,7 @@
   margin-top: -150px;
   margin-bottom: 50px;
   background-image: url("../images/dest/fon2.png");
-  background-size: cover;
+  background-size: 100% 100%;
 
   background-repeat: no-repeat;
 
@@ -39,11 +39,37 @@
   }
   &__wrap {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    margin: 44px 15px 11px;
+    a {
+      background-image: url(../images/dest/btn.png);
+      background-repeat: no-repeat;
+      width: 50px;
+      height: 42px;
+      padding: 24px 105px;
+      font-size: 20px;
+      text-transform: uppercase;
+      color: #ffff;
+      text-decoration: none;
+    }
+    .modal-containter {
+      margin: 33px;
+    }
   }
   &__accordion {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+  &__content {
+    margin-top: -32px;
+  }
+  &__imform {
+    margin-top: 34px;
+    margin-left: 30px;
+    p {
+      font-size: 17px;
+      color: #594aaf;
+    }
   }
 }

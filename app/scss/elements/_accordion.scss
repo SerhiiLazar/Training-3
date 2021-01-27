@@ -7,27 +7,31 @@
 
   &.open {
     .accordion__top {
-      /* background-image: url(../images/dest/accordion.png);
-      background-repeat: no-repeat; */
-      /* left: 20px;
-      right: 20px;
-      height: 20px; */
-      margin: 0 20px;
-
+      margin: 0px 16px;
+      background-color: #c69c6d;
       position: relative;
+      /* padding: 12px 33px 12px; */
+      width: 594px;
+      height: 45px;
+
       &::after {
         content: "";
         position: absolute;
-        right: 20px;
-        border-top: 10px solid transparent;
+        height: 45px;
+        right: -29px;
+        /* left: 22px; */
+        width: 23px;
+        border-top: 23px solid transparent;
         border-left: 29px solid #c69c6d;
-        border-bottom: 10px solid transparent;
+        border-bottom: 23px solid transparent;
       }
       &::before {
         content: "";
         position: absolute;
         background-image: url("../images/dest/accordion.png");
         background-repeat: no-repeat;
+        border: 5px solid #694dc8;
+        border-radius: 50%;
         height: 128px;
         width: 128px;
         left: -100px;
@@ -92,5 +96,7 @@
   line-height: 130%;
 }
 .accordion__content-wrap {
-  padding: 50px 50px 50px 70px;
+  font-size: 20px;
+  color: #ffff;
+  padding: 50px 0 50px 31px;
 }
