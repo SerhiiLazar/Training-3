@@ -1,9 +1,11 @@
 .prioriti {
+  margin-bottom: 50px;
   &__title {
     display: block;
     width: 513px;
     height: auto;
     line-height: 77px;
+
     span {
       font-size: 60px;
       line-height: 24px;
@@ -21,13 +23,18 @@
     flex-direction: column;
     margin-top: 20px;
     background-color: #594aaf;
-    color: #ffff;
-    font-size: 14px;
-    line-height: 1.2;
+    padding: 10px 10px 10px 10px;
+    p {
+      font-size: 14px;
+      line-height: 1.2;
+      color: #ffff;
+    }
     span {
+      color: #ffff;
       font-size: 17px;
       line-height: 24px;
       font-weight: 300;
+
       text-transform: uppercase;
       margin-bottom: 20px;
     }
@@ -39,7 +46,7 @@
   }
   .profs {
     position: relative;
-    margin-left: 20px;
+
     img {
       padding-left: 20px;
     }
