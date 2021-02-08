@@ -2,17 +2,15 @@
   margin-top: -150px;
   margin-bottom: 50px;
   background-image: url("../images/dest/fon2.png");
-  background-size: 100% 100%;
-
+  background-size: cover;
   background-repeat: no-repeat;
 
   /* background-position: center; */
   /*  background-size: cover; */
 }
 .workspace-fon {
-  background-image: url("../images/dest/fon_2.png");
   height: auto;
-  opacity: 0.9;
+  background: rgba(105, 77, 200, 0.8);
 
   &__title {
     display: flex;
@@ -22,7 +20,7 @@
   &__title h2 {
     opacity: 0.5;
     padding-top: 20px;
-    font-size: 55.9px;
+    font-size: 60px;
     line-height: 24px;
     font-weight: 300;
     text-transform: uppercase;
@@ -31,7 +29,7 @@
   }
   &__title h3 {
     opacity: 0.5;
-    font-size: 25.4px;
+    font-size: 26px;
     line-height: 24px;
     font-weight: 300;
     text-transform: uppercase;
@@ -44,8 +42,6 @@
     a {
       background-image: url(../images/dest/btn.png);
       background-repeat: no-repeat;
-      width: 50px;
-      height: 42px;
       padding: 24px 105px;
       font-size: 20px;
       text-transform: uppercase;
@@ -58,7 +54,6 @@
   }
   &__accordion {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
   }
   &__content {

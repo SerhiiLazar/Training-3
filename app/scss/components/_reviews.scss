@@ -1,8 +1,12 @@
 .reviews {
   background-image: url(../images/dest/photo_back.png);
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 20px;
+  margin-bottom: 50px;
+  @include mmax(767) {
+    background-size: cover;
+  }
   &__title {
     padding: 48px 10px 10px;
     text-align: end;

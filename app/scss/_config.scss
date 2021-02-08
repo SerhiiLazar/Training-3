@@ -76,6 +76,7 @@ body {
   color: $textcolor;
 
   background-image: url("../images/dest/background.png");
+  background-size: cover;
 }
 
 .container {
@@ -86,12 +87,12 @@ body {
   width: 100%;
 }
 
-/* body.active-menu {
+body.active-menu {
   overflow: hidden;
   .overlay-menu {
     right: 0;
   }
-} */
+}
 /* .overlay-menu {
   position: fixed;
   top: 0;
