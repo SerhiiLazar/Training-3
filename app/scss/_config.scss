@@ -21,7 +21,7 @@ $gutter: $grid-gutter-width;
   "ProximaNova",
   havy,
   900,
-  "..fonts/src/proxima-nova-extra-condensed-black.ttf"
+  "..fonts/src/proxima-nova-condensed-black-italic.ttf"
 );
 @include font(
   "ProximaNova",
@@ -35,7 +35,6 @@ $gutter: $grid-gutter-width;
   400,
   "..fonts/src/proxima-nova-regular.ttf"
 );
-@include font("ProximaNova", normal, 400, "..fonts/src/proxima-nova-light.ttf");
 
 // GENERAL DOCUMENT STYLES
 
