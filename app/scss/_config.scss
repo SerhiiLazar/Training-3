@@ -3,7 +3,7 @@ $accent: #000000; // Accent Color
 $fontsize: 16px; // Body Font Size
 $textcolor: #333333; // Text Color
 $system: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
-$font: "Montserrat", sans-serif; // Roboto Font Family
+$font: "ProximaNova" sans-serif;
 
 // Bootstrap compatible gutter variable => $gutter
 $grid-gutter-width: 20px;
@@ -15,7 +15,27 @@ $gutter: $grid-gutter-width;
 
 // FONTS LOAD SECTION
 
-// @include font("Roboto", normal, 400, "../fonts/roboto-regular-webfont.woff2");
+@include font("ProximaNova", light, 300, "..fonts/src/proxima-nova-light.ttf");
+
+@include font(
+  "ProximaNova",
+  havy,
+  900,
+  "..fonts/src/proxima-nova-extra-condensed-black.ttf"
+);
+@include font(
+  "ProximaNova",
+  bold,
+  700,
+  "..fonts/srcproxima-nova-extra-condensed-bold.ttf"
+);
+@include font(
+  "ProximaNova",
+  regular,
+  400,
+  "..fonts/src/proxima-nova-regular.ttf"
+);
+@include font("ProximaNova", normal, 400, "..fonts/src/proxima-nova-light.ttf");
 
 // GENERAL DOCUMENT STYLES
 

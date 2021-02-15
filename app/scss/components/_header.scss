@@ -1,24 +1,36 @@
 .header {
+  &__form {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 11px;
+
+    margin-bottom: -28px;
+  }
   &__input {
     display: flex;
     justify-content: flex-end;
+    width: 296px;
 
-    width: auto;
     font-size: 12px;
     height: 50px;
-    .input-tel {
-      width: auto;
+    margin-left: -15px;
 
+    .input-tel {
+      width: 227px;
+      z-index: 1000;
       text-align: center;
       font-size: 21px;
       font-weight: bold;
       border: 2px solid $grey;
       height: 50px;
-      background-color: inherit;
+      color: #ffff;
+      background-color: black;
     }
     .input-btn {
       background-color: $grey;
       border: 0;
+      margin-right: -15px;
     }
   }
   &__nav {
