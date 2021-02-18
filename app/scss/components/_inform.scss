@@ -1,32 +1,8 @@
 .header__inform {
   display: flex;
   margin-bottom: -100px;
-  position: relative;
-  &::after {
-    content: "";
-    background-color: #b58f65;
-    opacity: 0.9;
-    width: 1995px;
-    position: absolute;
-    /* top: 0; */
-    bottom: 148px;
-    z-index: 1;
-    left: -35rem;
-    height: 24px;
-  }
-  &::before {
-    content: "";
-    background-color: #b58f65;
-    opacity: 0.9;
-    width: 1995px;
-    position: absolute;
-    /* top: 0px; */
-    z-index: 1;
-    bottom: 148px;
-    right: 0px;
-    left: -35rem;
-    height: 37px;
-  }
+  /* position: relative; */
+
   .servic {
     &__title {
       font-size: 36px;
@@ -53,6 +29,17 @@
         z-index: 1;
         left: 819px;
         width: 5px;
+        @include mmax(767) {
+          content: "";
+          background-color: #5849ae;
+          height: 784px;
+          position: absolute;
+          top: -396px;
+          z-index: 1;
+          left: 0;
+          right: 0;
+          width: 5px;
+        }
       }
     }
     &__btn {
@@ -72,6 +59,9 @@
     margin: 139px -1px 45px;
     margin-left: -44px;
     position: relative;
+    @include mmax(767) {
+      overflow: hidden;
+    }
     &::after {
       content: "";
       background-color: #5849ae;
@@ -81,6 +71,17 @@
       z-index: -1;
       left: 114px;
       width: 10px;
+      @include mmax(767) {
+        content: "";
+        background-color: #5849ae;
+        height: 784px;
+        position: absolute;
+        top: -365px;
+        z-index: -1;
+        left: 0;
+        right: 0;
+        width: 10px;
+      }
     }
     &::before {
       content: "";
@@ -91,6 +92,17 @@
       z-index: 2;
       left: 254px;
       width: 5px;
+      @include mmax(767) {
+        content: "";
+        background-color: #c69c6d;
+        height: 784px;
+        position: absolute;
+        top: -365px;
+        z-index: 2;
+        left: 0;
+        right: 0;
+        width: 5px;
+      }
     }
   }
 

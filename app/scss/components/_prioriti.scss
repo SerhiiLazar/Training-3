@@ -18,6 +18,13 @@
     display: flex;
     align-items: flex-end;
     margin-left: -12px;
+    @include mmax(767) {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 10px;
+    }
   }
   .text {
     display: flex;
@@ -25,6 +32,7 @@
     margin-top: 20px;
     background-color: #594aaf;
     padding: 10px 10px 10px 10px;
+
     p {
       font-size: 14px;
       line-height: 1.2;
@@ -46,8 +54,13 @@
     }
   }
   .profs {
+    /* display: flex; */
     position: relative;
     margin-left: 5px;
+    @include mmax(767) {
+      display: flex;
+      flex-direction: column;
+    }
     &::after {
       content: "";
       background-color: #594aaf;
