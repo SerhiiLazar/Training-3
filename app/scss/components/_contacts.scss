@@ -12,18 +12,19 @@
     display: flex;
 
     justify-content: flex-end;
-    flex: 0 0 50%;
   }
   &__contant {
     background-image: url("../images/dest/map_58.png");
     background-repeat: no-repeat;
     background-size: cover;
+    flex-direction: column;
+
     /* height: 514px; */
   }
   &__form {
     background-color: #ffff;
     display: flex;
-    max-width: 50%;
+    flex: 0 0 50%;
     position: relative;
     flex-direction: column;
     padding: 18px 20px 24px 27px;
@@ -74,5 +75,14 @@
       text-transform: uppercase;
       color: #ffffff;
     }
+  }
+  &__info {
+    background-color: #c19b70;
+
+    display: flex;
+    flex-direction: column;
+    flex: 0 2 50%;
+    /*     align-items: flex-end;
+ */
   }
 }

@@ -2,6 +2,9 @@
   display: flex;
   margin-bottom: -100px;
   /* position: relative; */
+  @include mmax(991) {
+    margin-bottom: 300px;
+  }
 
   .servic {
     &__title {
@@ -29,16 +32,8 @@
         z-index: 1;
         left: 819px;
         width: 5px;
-        @include mmax(767) {
-          content: "";
-          background-color: #5849ae;
-          height: 784px;
-          position: absolute;
-          top: -396px;
-          z-index: 1;
-          left: 0;
-          right: 0;
-          width: 5px;
+        @include mmax(991) {
+          display: none;
         }
       }
     }
@@ -60,7 +55,7 @@
     margin-left: -44px;
     position: relative;
     @include mmax(767) {
-      overflow: hidden;
+      display: none;
     }
     &::after {
       content: "";
@@ -71,16 +66,8 @@
       z-index: -1;
       left: 114px;
       width: 10px;
-      @include mmax(767) {
-        content: "";
-        background-color: #5849ae;
-        height: 784px;
-        position: absolute;
-        top: -365px;
-        z-index: -1;
-        left: 0;
-        right: 0;
-        width: 10px;
+      @include mmax(991) {
+        display: none;
       }
     }
     &::before {
@@ -92,16 +79,8 @@
       z-index: 2;
       left: 254px;
       width: 5px;
-      @include mmax(767) {
-        content: "";
-        background-color: #c69c6d;
-        height: 784px;
-        position: absolute;
-        top: -365px;
-        z-index: 2;
-        left: 0;
-        right: 0;
-        width: 5px;
+      @include mmax(991) {
+        display: none;
       }
     }
   }
@@ -109,5 +88,8 @@
   img {
     position: relative;
     height: 507px;
+    @include mmax(991) {
+      display: none;
+    }
   }
 }

@@ -5,6 +5,9 @@
     flex: 1;
     justify-content: space-between;
     margin-bottom: 20px;
+    @include mmax(776){
+      flex-direction: column;
+    }
   }
   &__left {
     display: flex;
