@@ -1,21 +1,21 @@
 .header {
   &__form {
-    box-sizing: border-box;
-    display: flex;
-    justify-content: flex-end;
+    
     margin-top: 11px;
-    flex: 1;
     margin-bottom: -28px;
+    @include mmax(991){
+      
+      margin-bottom: 20px;
+    }
   }
-  &__input {
-    display: flex;
-    flex: 0 0 35%;
+    &__input {
+    display: flex;  
+    justify-content: flex-end;
     font-size: 12px;
     height: 50px;
-
+    
     .input-tel {
-      /* width: 227px; */
-
+     
       z-index: 1000;
       text-align: center;
       font-size: 21px;
@@ -28,18 +28,22 @@
     .input-btn {
       background-color: $grey;
       border: 0;
+      height: 50px;
       margin-right: 20px;
     }
-  }
-  &__nav {
+    }  
+  .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     /* position: relative; */
+    @include mmax(991){
+      display:flex;
+      
+    }
     &::before {
       content: "";
       position: absolute;
-
       background: rgb(116, 71, 185);
       background: linear-gradient(
         99deg,
@@ -51,50 +55,66 @@
       border-top: 5px solid;
       border-bottom: 5px solid;
       height: 74px;
-      top: 62px;
-      bottom: 0;
       left: 0;
       right: 0;
     }
+  
     &__menu {
     display: flex;
     padding-left: 0;
     list-style-type: none;
-    z-index: -1;
+    
     @include mmax(991){
       display: flex;
       align-items: center;
     }
-  }  
-    .nav-list {
-      display: flex;
+  }
+  &__list {
+    display: flex;
+      margin: 0;
+      padding-left: 0;
       z-index: 100;
-      &:hover {
-        background: rgba(198, 156, 109, 0.5);
-        color: $grey;
+      list-style: none;
+      
+      @include mmax(991){
+        display: none;
       }
-      a {
-        display: block;
-        padding: 20px 20px;
-        font-size: 20px;
-        line-height: 27px;
-        width: auto;
-        font-weight: 300;
-        text-transform: uppercase;
-        color: $grey;
-        text-decoration: none;
+     .line {
+      &:nth-child(2){
+        margin-left: 36px;
       }
+      &:nth-child(4){
+        margin-left: 36px;
+      }
+       
+     } 
+    }
+  a {
+    display: block;
+    z-index: 100;
+    padding: 20px 20px;
+    font-size: 20px;
+    line-height: 27px;
+    width: auto;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: $grey;
+    text-decoration: none;
+    &:hover {
+      background: rgba(198, 156, 109, 0.5);
+      color: $grey;
     }
   }
-    &__logo {
-      display: block;
-      z-index: 200;
-      /* width: 174px;
-      height: 173px; */
-    } 
-    }
-  
     
+  &__logo {
+    display: block;
+    z-index: 200;
+    @include mmax(991) {
+      align-items: flex-end;
+    }
+  } 
+}
+}
     
     
   
